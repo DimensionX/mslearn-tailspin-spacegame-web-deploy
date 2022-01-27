@@ -96,6 +96,8 @@ namespace UITests
         [TestCase("profile-1", "profile-modal-1")]
         public void ClickLinkById_ShouldDisplayModalById(string linkId, string modalId)
         {
+            Console.WriteLine("ClickLinkById_ShouldDisplayModalById");
+            
             // Skip the test if the driver could not be loaded.
             // This happens when the underlying browser is not installed.
             if (driver == null)
