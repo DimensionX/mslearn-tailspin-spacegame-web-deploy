@@ -140,9 +140,6 @@ stages:
 - stage: 'Staging'
   displayName: 'Deploy to the staging environment'
   dependsOn: Test
-  network:
-    forwarded_ports:
-    - 50095/tcp
   jobs:
   - deployment: Deploy
     pool:
